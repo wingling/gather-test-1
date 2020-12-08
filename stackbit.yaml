@@ -1,0 +1,12 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+cmsName: contentful
+import:
+  type: contentful
+  contentFile: contentful/export.json
+  spaceIdEnvVar: CONTENTFUL_SPACE_ID
+  accessTokenEnvVar: CONTENTFUL_ACCESS_TOKEN
+models:
+  layout:
+    type: page
+    urlPath: "{slug}"
