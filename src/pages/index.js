@@ -1,19 +1,19 @@
-import React from "react";
-
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import React from 'react';
+import Layout from 'components/layout';
+import SEO from "components/seo";
 import { useStaticQuery, graphql } from 'gatsby';
+
 import Section from 'sections/section';
 
-const NotFoundPage = () => {
+const Home = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            contentfulLayout(title: {eq: "404"}) {
+            contentfulLayout(title: {eq: "Homepage"}) {
                 id
                 title
                 description
-                contentful_id
+                contentful_id,
                 menu {
                     name
                     type
@@ -31,14 +31,13 @@ const NotFoundPage = () => {
             }
         }
     `);
-
     const menus = data.contentfulLayout.menu;
 
     const contentModule = data.contentfulLayout.contentModule;
-    
+
     return (
         <Layout menus={ menus }>
-            <SEO title="404: Not found" />
+            <SEO title="Homepage" />
             {
                 contentModule.length > 0 && 
                 contentModule.map(content => (
@@ -47,6 +46,7 @@ const NotFoundPage = () => {
             }
         </Layout>
     );
-}
+};
 
-export default NotFoundPage;
+export default Home;
+
