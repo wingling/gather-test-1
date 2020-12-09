@@ -55,6 +55,7 @@ const Contact = ({ contentModuleId }) => {
           </p>
           <form
             id="contact_form"
+            netlify
             className="w-full md:w-3/4"
             noValidate
             data-sal="slide-up"
