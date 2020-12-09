@@ -4,7 +4,7 @@ import Hero from "sections/hero";
 import About from "sections/about";
 import Testimonials from "sections/testimonials";
 import Services from "sections/services";
-import OurTeam from "sections/ourTeam";
+import Team from "sections/team";
 import Pricing from "sections/pricing";
 import Contact from "sections/contact";
 import PageNotFound from "sections/pageNotFound";
@@ -15,7 +15,7 @@ const components = {
   About,
   Testimonials,
   Services,
-  OurTeam,
+  Team,
   Pricing,
   Contact,
   PageNotFound,

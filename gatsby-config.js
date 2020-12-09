@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
     siteMetadata: {
-        title: `Zenii`,
-        description: `A One-page Gatsby starter built with Tailwindcss and  Postcss.`,
-        author: `The Bakerdev`,
+        title: `GatherMed`,
+        description: `GatherMed is transforming practices for the new normal, driving meaningful change in outcomes and revenue for payers and practices across the world.`,
+        author: `GatherMed`,
     },
     plugins: [
         {

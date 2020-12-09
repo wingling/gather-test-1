@@ -9,7 +9,7 @@ const Home = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            contentfulLayout(title: {eq: "Homepage"}) {
+            contentfulLayout(slug: {eq: "/"}) {
                 id
                 title
                 description

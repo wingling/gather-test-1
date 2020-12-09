@@ -25,6 +25,7 @@ export const query = graphql`
             contentModule {
                 ... on Node {
                     id
+                    __typename
                 }
             }
         }
@@ -34,7 +35,7 @@ export const query = graphql`
 export default function PageTemplate({ data }) {
     const title = data.contentfulLayout.title;
     const description = data.contentfulLayout.description;
-    const menus = data.contentfulLayout.menu;
+    const menus = data.contentfulLayout?.menu;
     const contentModule = data.contentfulLayout.contentModule;
 
     return (

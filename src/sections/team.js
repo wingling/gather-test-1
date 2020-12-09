@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import TeamMember from "components/teamMember";
 
-const OurTeam = ({ contentModuleId }) => {
+const Team = ({ contentModuleId }) => {
   const data = useStaticQuery(graphql`
     query {
       allContentfulLayoutTeam {
@@ -25,7 +25,7 @@ const OurTeam = ({ contentModuleId }) => {
                 title
               }
               image {
-                fluid {
+                fluid(quality: 100, maxWidth: 500, maxHeight: 500) {
                   ...GatsbyContentfulFluid
                 }
               }
@@ -41,17 +41,26 @@ const OurTeam = ({ contentModuleId }) => {
   );
 
   return (
-    <section id="ourTeam" className="our-team section bg-gray">
-      <div className="container mx-auto">
+    <section id="team" className="team container section mx-auto">
+      <div className="mx-auto">
         <h2
-          className="section__title text-center mb-16"
+          className="section__title text-center"
           data-sal="fade"
           data-sal-easing="ease-in-cubic"
         >
           {content.node.heading}
         </h2>
+        <p
+          className="text-center mb-6"
+          data-sal="slide-up"
+          data-sal-easing="ease-in-cubic"
+          data-sal-delay="100"
+        >
+          {content.node.description.description}
+        </p>
+
         {content.node.teamMembers.length > 0 && (
-          <div className="ourTeam__items">
+          <div className="team__items">
             {content.node.teamMembers.map(member => (
               <TeamMember member={member} key={member.id} />
             ))}
@@ -62,8 +71,8 @@ const OurTeam = ({ contentModuleId }) => {
   );
 };
 
-OurTeam.propTypes = {
+Team.propTypes = {
   contentModuleId: PropTypes.string.isRequired,
 };
 
-export default OurTeam;
+export default Team;

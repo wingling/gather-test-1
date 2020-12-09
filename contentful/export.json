@@ -308,7 +308,7 @@
                   "layoutPageNotFound",
                   "layoutPricing",
                   "layoutServices",
-                  "layoutTeamMembers",
+                  "layoutTeam",
                   "layoutTestimonials"
                 ]
               }
@@ -1528,7 +1528,7 @@
             "id": "99vrmets99us"
           }
         },
-        "id": "layoutTeamMembers",
+        "id": "layoutTeam",
         "type": "ContentType",
         "createdAt": "2020-12-09T01:27:04.661Z",
         "updatedAt": "2020-12-09T02:36:59.945Z",
@@ -1591,8 +1591,8 @@
           "omitted": false
         },
         {
-          "id": "teamMembers",
-          "name": "Team Members",
+          "id": "team",
+          "name": "Team",
           "type": "Array",
           "localized": false,
           "required": true,
@@ -2744,7 +2744,7 @@
         },
         "contentType": {
           "sys": {
-            "id": "layoutTeamMembers",
+            "id": "layoutTeam",
             "type": "Link",
             "linkType": "ContentType"
           }
@@ -2769,7 +2769,7 @@
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "teamMembers",
+          "fieldId": "team",
           "widgetId": "entryLinksEditor",
           "widgetNamespace": "builtin"
         }
@@ -5566,7 +5566,7 @@
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "layoutTeamMembers"
+            "id": "layoutTeam"
           }
         }
       },
@@ -5577,7 +5577,7 @@
         "description": {
           "en-US": "We've got a top notch team!"
         },
-        "teamMembers": {
+        "team": {
           "en-US": [
             {
               "sys": {
