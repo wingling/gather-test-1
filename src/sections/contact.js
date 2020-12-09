@@ -55,13 +55,16 @@ const Contact = ({ contentModuleId }) => {
           </p>
           <form
             id="contact_form"
-            netlify
+            name="contact"
+            method="POST"
+            data-netlify="true"
             className="w-full md:w-3/4"
             noValidate
             data-sal="slide-up"
             data-sal-easing="ease-in-cubic"
             data-sal-delay="100"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div className="input-group mb-2">
               <label htmlFor="name">Name</label>
               <input type="text" id="name" className="input" name="name" />
