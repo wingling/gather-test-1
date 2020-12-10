@@ -17,6 +17,7 @@
     "cleanup-repository": "npm uninstall contentful-import chalk inquirer && node ./bin/cleanup.js && rimraf bin contentful"
   },
   "dependencies": {
+    "@aaronhayes/react-use-hubspot-form": "^1.2.2",
     "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
     "chalk": "^4.1.0",
     "contentful-import": "^7.9.6",

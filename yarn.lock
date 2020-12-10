@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@aaronhayes/react-use-hubspot-form@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@aaronhayes/react-use-hubspot-form/-/react-use-hubspot-form-1.2.2.tgz#7d70777ff346b58ec0f8fad33f5cc2f4c2d826c4"
+  integrity sha512-i2bCOmWdrTO7s80icy2Ng1K/B1aCULc8s/lzaJjFnEZ5plEJgse/THigkFayI52xsIy7WNnQMQp8hWXp4E5TbA==
+
 "@ardatan/aggregate-error@0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@ardatan/aggregate-error/-/aggregate-error-0.0.6.tgz#fe6924771ea40fc98dc7a7045c2e872dc8527609"

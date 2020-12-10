@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-import validation from "utils/validation";
+// import validation from "utils/validation";
+
+import { useHubspotForm } from "@aaronhayes/react-use-hubspot-form";
 
 const Contact = ({ contentModuleId }) => {
   const data = useStaticQuery(graphql`
@@ -31,8 +33,14 @@ const Contact = ({ contentModuleId }) => {
     edge => edge.node.id === contentModuleId
   );
 
+  const { loaded, error, formCreated } = useHubspotForm({
+    portalId: "8985408",
+    formId: "469d1015-74e1-4ba6-a20a-c3108d467cf9",
+    target: "#hs-contact-form",
+  });
+
   useEffect(() => {
-    validation.init();
+    // validation.init();
   }, []);
 
   return (
@@ -53,7 +61,10 @@ const Contact = ({ contentModuleId }) => {
           >
             {content.node.description.description}
           </p>
-          <form
+
+          <div id="hs-contact-form"></div>
+
+          {/* <form
             id="contact_form"
             name="contact"
             method="POST"
@@ -80,7 +91,7 @@ const Contact = ({ contentModuleId }) => {
             <button type="submit" className="btn btn--primary mt-8">
               Send
             </button>
-          </form>
+          </form> */}
         </div>
         <div className="contact__image">
           <div
