@@ -18,8 +18,8 @@
     @apply w-full pt-16;
 
     img {
-        max-height: 342px;
-        max-width: 476px;
+        max-height: 500px;
+        max-width: 368px;
         @apply w-full;
     }
 }
