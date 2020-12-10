@@ -1,14 +1,16 @@
-.team__content {
+/* .team__content {
   @apply text-center w-full;
-}
+} */
 
 .team__items {
   @apply grid row-gap-16 grid-cols-1;
 }
 
 .team-member {
-  @apply text-center;
-  @apply grid row-gap-16 grid-cols-2;
+  @apply text-center w-full;
+  padding: 0 15px;
+  /* @apply text-center;
+  @apply grid row-gap-16 grid-cols-2; */
 }
 
 .team-member__image {
@@ -26,13 +28,13 @@
 }
 
 @screen md {
-  .team__content {
-    @apply w-1/2 order-2;
-  }
-
   .team__items {
     @apply grid-cols-2;
   }
+
+  /* .team__content {
+    @apply w-1/2 order-2;
+  } */
 
   .team-member {
     &--left {

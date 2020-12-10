@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 
 const TeamMember = ({ member }) => (
   <div
-    className={`team-member`}
+    className="team-member"
     data-sal="fade"
     data-sal-easing="ease-in-cubic"
     data-sal-duration="400"
