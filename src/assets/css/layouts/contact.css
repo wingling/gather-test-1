@@ -1,23 +1,22 @@
-.contact__content {
-    @apply w-full;
-}
-
 .contact__image {
-    @apply hidden w-full;
+  @apply hidden;
 }
 
 .contact__image-wrap {
-    max-height: 265px;
-    max-width: 330px;
-    @apply mx-auto;
+  max-height: 265px;
+  max-width: 330px;
+  @apply mx-auto;
 }
 
-@screen md {
-    .contact__content {
-        @apply w-1/2;
-    }
+.contact-form {
+  @apply w-full;
+}
 
-    .contact__image {
-        @apply block w-1/2;
-    }
+.contact__content {
+  @apply block w-full;
+  padding: 4rem;
+}
+
+.hs-form-iframe {
+  @apply w-full;
 }

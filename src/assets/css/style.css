@@ -10,4 +10,6 @@
 
 @import "layouts/index.css";
 
+@import "utilities/index.css";
+
 @import "vendor/index.css";

@@ -29,9 +29,9 @@
         @apply w-1/2 text-left;
     }
 
-    .hero__tagline-text {
+    /* .hero__tagline-text {
         @apply w-3/4;
-    }
+    } */
 
     .hero__image {
         @apply w-1/2 pt-0;

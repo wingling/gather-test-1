@@ -4,6 +4,8 @@
 
 .service {
   @apply text-center w-full;
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
 .service__image {

@@ -34,8 +34,8 @@ const Contact = ({ contentModuleId }) => {
   );
 
   const { loaded, error, formCreated } = useHubspotForm({
-    portalId: "8985408",
-    formId: "469d1015-74e1-4ba6-a20a-c3108d467cf9",
+    portalId: "8731754",
+    formId: "ccfe3d1f-7956-4221-a5c0-56fbbdcf44ab",
     target: "#hs-contact-form",
   });
 
@@ -45,8 +45,8 @@ const Contact = ({ contentModuleId }) => {
 
   return (
     <section id="contact" className="contact bg-gray">
-      <div className="section container mx-auto">
-        <div className="contact__content">
+      <div className="container contact__content mx-auto">
+        <div>
           <h2
             className="section__title"
             data-sal="fade"
@@ -61,50 +61,8 @@ const Contact = ({ contentModuleId }) => {
           >
             {content.node.description.description}
           </p>
-
-          <div id="hs-contact-form"></div>
-
-          {/* <form
-            id="contact_form"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            className="w-full md:w-3/4"
-            noValidate
-            data-sal="slide-up"
-            data-sal-easing="ease-in-cubic"
-            data-sal-delay="100"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <div className="input-group mb-2">
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" className="input" name="name" />
-            </div>
-            <div className="input-group mb-2">
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" className="input" name="email" />
-            </div>
-            <div className="input-group">
-              <label htmlFor="message">Message</label>
-              <textarea id="message" className="h-20" name="message"></textarea>
-            </div>
-            <button type="submit" className="btn btn--primary mt-8">
-              Send
-            </button>
-          </form> */}
         </div>
-        <div className="contact__image">
-          <div
-            className="mx-auto"
-            data-sal="slide-up"
-            data-sal-delay="400"
-            data-sal-duration="500"
-          >
-            <div className="contact__image-wrap">
-              <Img fluid={content.node.image.fluid} alt="Contact" />
-            </div>
-          </div>
-        </div>
+        <div id="hs-contact-form" className="contact-form"></div>
       </div>
     </section>
   );

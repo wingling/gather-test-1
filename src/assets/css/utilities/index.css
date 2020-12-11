@@ -1,1 +1,63 @@
 /* Utilites styles */
+
+.bg-slight-white {
+  background-color: #eef4f4;
+}
+
+.cta-box {
+  @apply border border-lightGray rounded shadow-lg grid grid-cols-2;
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 3px solid #f53f3f;
+  margin-top: 30px;
+}
+
+.cta-header {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.cta-sub {
+  color: #b2b3b4;
+  font-size: 14px;
+}
+
+.cta-btn-box {
+  align-self: center;
+}
+
+.c-light-grey {
+  color: #b2b3b4;
+}
+
+.c-dark-grey {
+  color: #191a1b;
+}
+
+@screen lg {
+  .cta-header {
+    font-size: 16px;
+  }
+}
+
+@screen md {
+  .cta-header {
+    font-size: 22px;
+  }
+
+  /* .cta-box {
+    @apply grid-cols-1;
+  } */
+
+  .hero__tagline {
+    @apply w-1/2 text-left;
+  }
+
+  /* .hero__tagline-text {
+        @apply w-3/4;
+    } */
+
+  .hero__image {
+    @apply w-1/2 pt-0;
+  }
+}
