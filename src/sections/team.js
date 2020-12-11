@@ -28,6 +28,8 @@ const Team = ({ contentModuleId }) => {
                 fluid(quality: 100, maxWidth: 500, maxHeight: 500) {
                   ...GatsbyContentfulFluid
                 }
+                description
+                title
               }
             }
           }
@@ -51,7 +53,7 @@ const Team = ({ contentModuleId }) => {
           {content.node.heading}
         </h2>
         <p
-          className="text-center mb-6"
+          className="text-center mb-12"
           data-sal="slide-up"
           data-sal-easing="ease-in-cubic"
           data-sal-delay="100"

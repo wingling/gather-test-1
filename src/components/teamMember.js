@@ -13,7 +13,8 @@ const TeamMember = ({ member }) => (
       <div className="team-member__image-wrap">
         <Img
           fluid={member.image.fluid}
-          alt={member.alt.alt}
+          alt={member.image.description}
+          title={member.image.title}
           className="team-member__image"
         />
       </div>
