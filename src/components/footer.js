@@ -43,7 +43,7 @@ const Footer = ({ menus }) => {
                 </div>
               </div>
             </li>
-            <li className="mb-2">
+            {/* <li className="mb-2">
               <div className="item">
                 <i className="item__icon material-icons text-white text-2xl">
                   settings_phone
@@ -54,7 +54,7 @@ const Footer = ({ menus }) => {
                   </p>
                 </div>
               </div>
-            </li>
+            </li> */}
             <li className="mb-2">
               <div className="item">
                 <i className="item__icon material-icons text-white text-2xl">
