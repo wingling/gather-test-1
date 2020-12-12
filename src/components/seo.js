@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -23,9 +23,9 @@ function SEO({ description, lang, meta, title }) {
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
@@ -52,6 +52,22 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          name: `og:image`,
+          content: `https://images.ctfassets.net/99vrmets99us/1TgjkXuW3JxA3JuOiWT8Tb/46b2eac574ce53010ed5538692c1d05e/gathermed-RPM-4-everyone.png`,
+        },
+        {
+          property: `og:image:type`,
+          content: `image/png`,
+        },
+        {
+          property: `og:image:width`,
+          content: `256`,
+        },
+        {
+          property: `og:image:height`,
+          content: `256`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -69,7 +85,7 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     />
-  )
+  );
 }
 
 SEO.defaultProps = {
