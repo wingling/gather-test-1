@@ -52,7 +52,7 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
-          name: `og:image`,
+          property: `og:image`,
           content: `https://images.ctfassets.net/99vrmets99us/1TgjkXuW3JxA3JuOiWT8Tb/46b2eac574ce53010ed5538692c1d05e/gathermed-RPM-4-everyone.png`,
         },
         {
