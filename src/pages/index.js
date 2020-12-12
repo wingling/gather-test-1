@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "components/layout";
 import SEO from "components/seo";
+import Embed from "components/embed";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Section from "sections/section";
@@ -45,6 +46,7 @@ const Home = () => {
             key={content.id}
           />
         ))}
+      <Embed />
     </Layout>
   );
 };
